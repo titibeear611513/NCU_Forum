@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>新增貼文</title>
+    	<link href="statics/icon/ncu.ico" type="image/x-icon" rel="icon">
+    	<link href="statics/icon/ncu.ico" type="image/x-icon" rel="shortcut icon">
+        <link rel="stylesheet" href="statics/css/testpost.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+        <script src="statics/js/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header>
+        <div class="header_wrap">
+            <div class="header_inner mcontainer">
+                <div class="left_side">
+                    
+                    <div class="slide_menu">
+                        <i class="bx bx-menu" id="btn"></i>
+                    </div>
+                    <div id="logo">
+                        <a href="Test_home.html"> 
+                            <img src="statics/img/NCU_LOGO.png" >
+                        </a>
+                    </div>
+                    <div class="logoname">
+                        <span class="logoname">中大論壇</span>
+                    </div>
+                </div>
+
+                <div class="mid_side">
+                    <div class="header-search-icon" uk-toggle="target: #wrapper ; cls: show-searchbox"> </div>
+                    <div class="header_search"><i class="bx bx-search"></i> 
+                        <input value="" type="text" class="form-control" placeholder="搜尋貼文關鍵字" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="right_side">
+                    <div class="header_widgets">
+                        <nav class="my-2 my-md-0 mr-md-3">
+                            <a class="p-2 text-light" href="Test_Post.html">新增貼文</a>
+                        </nav>
+                        <a class="btn btn-outline-info" href="personal_inform.html">個人資訊</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>  
+    
+    <div class="sidebar" id ="sidebar">
+        <ul class="nav_list">
+            <li>
+                <a href="Test_home.html">
+                    <i class='bx bxs-bell'></i>
+                    <span class="links_name">主頁</span>
+                </a>
+                <span class="tooltip">主頁</span>
+            </li>
+            <li>
+                <a href="campus.html">
+                    <i class='bx bxs-landmark' ></i>
+                    <span class="links_name">校園版</span>
+                </a>
+                <span class="tooltip">校園版</span>
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class='bx bxs-chat' ></i>
+                    <span class="links_name">閒聊版</span>
+                </a>
+                <span class="tooltip">閒聊版</span>
+            </li>
+            <li>
+                <a href="beauty.html">
+                    <i class='bx bx-female'></i>
+                    <span class="links_name">表特版</span>
+                </a>
+                <span class="tooltip">表特版</span>
+            </li>
+            <li>
+                <a href="rent.html">
+                    <i class='bx bxs-home' ></i>
+                    <span class="links_name">租屋版</span>
+                </a>
+                <span class="tooltip">租屋版</span>
+            </li>
+            <li>
+                <a href="Test_lost.html">
+                    <i class='bx bxs-shopping-bag'></i>
+                    <span class="links_name">遺失物版</span>
+                </a>
+                <span class="tooltip">遺失物版</span>
+            </li>
+            <li>
+                <a href="transaction.html">
+                    <i class='bx bx-money-withdraw' ></i>
+                    <span class="links_name">交易版</span>
+                </a>
+                <span class="tooltip">交易版</span>
+            </li>
+            <li>
+                <a href="game.html">
+                    <i class='bx bxs-game' ></i>
+                    <span class="links_name">遊戲版</span>
+                </a>
+                <span class="tooltip">遊戲版</span>
+            </li>
+            <li>
+                <a href="activity.html">
+                    <i class='bx bx-accessibility'></i>
+                    <span class="links_name">活動版</span>
+                </a>
+                <span class="tooltip">活動版</span>
+            </li>
+            <li>
+                <a href="Test_hate.html">
+                    <i class='bx bxs-comment-x'></i>
+                    <span class="links_name">靠北版</span>
+                </a>
+                <span class="tooltip">靠北版</span>
+            </li>
+            <li>
+                <a href="food.html">
+                    <i class='bx bxs-bowl-hot' ></i>
+                    <span class="links_name">美食版</span>
+                </a>
+                <span class="tooltip">美食版</span>
+            </li>
+            <li>
+                <a href="course.html">
+                    <i class='bx bxs-book-alt' ></i>
+                    <span class="links_name">課程版</span>
+                </a>
+                <span class="tooltip">課程版</span>
+            </li>
+            <li>
+                <a class="linkButtons" href="logout" id="logout">
+                    <i class='bx bxs-cog' ></i>
+                    <span class="links_name">登出</span>
+                </a>
+                <span class="tooltip">登出</span>
+            </li>
+        </ul>
+    </div>
+    <div class="home_content">
+        <div class="container" style="width: 60%; padding: 1em 2em;">
+            <div id="flashMessage" class="message" style="display: none;"></div>
+            <div class="titlename">新增貼文</div>
+            <form id="form" accept-charset="utf-8">
+                <div style="display:none;"><input type="hidden" name="_method" value="POST"></div>
+                
+                <div class="select-box">
+                    <label class="details" for="post_group" style="margin-top: 1em;">看板分類</label>
+                    <div class="options-container">
+                        <select  name=”group:  id="post_group" required="required" >
+                        
+                        	<option value=校園版> 校園版 </option>
+                        	
+                        	<option value=閒聊版> 閒聊版 </option>
+                        	
+                        	<option value=表特版> 表特版 </option>
+
+                            <option value=租屋版> 租屋版 </option>
+    
+                            <option value=遺失物版> 遺失物版 </option>
+                            
+                            <option value=交易版> 交易版 </option>
+                            
+                            <option value=遊戲版> 遊戲版 </option>
+                            
+                            <option value=活動版> 活動版 </option>
+                            
+                            <option value=靠北版> 靠北版 </option>
+                            
+                            <option value=美食版> 美食版 </option>
+                            
+                            <option value=課程版> 課程版 </option>
+    
+                        </select>
+                    </div>
+                </div>
+                <div class="post-details">
+                    <div class="input title required">
+                        <label class="details">標題</label>
+                        <input name="title" maxlength="30" type="text" id="post_title" required="required">
+                    </div>
+                    <div class="textarea info required">
+                        <label class="details">內容</label>
+                        <textarea name="info"  type="text" id="post_info"  required="required" rows="5" cols="30"></textarea>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="button" id="submit" value="發布">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    	<script type="text/javascript">
+		$(document).ready(
+				function() {
+					// 處理表單點擊事件
+					var $form = $('#submit');
+					$form.click(function() {
+						submit();
+					});
+
+					function submit() {
+						var group = $('#post_group').val();
+						var title = $('#post_title').val();
+						var info = $('#post_info').val();
+
+						//var email_rule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
+
+						//資料組成JSON格式
+						var data_object = {
+							"group" : group,
+							"title" : title,
+							"info" : info
+						};
+
+						// 將JSON格式轉換成字串
+						var data_string = JSON.stringify(data_object);
+
+						// 發出POST的AJAX請求
+						$.ajax({
+							type : "POST",
+							url : "api/post.do",
+							data : data_string,
+							crossDomain : true,
+							cache : false,
+							dataType : 'json',
+							timeout : 5000,
+							success : function(response) {
+								$('#flashMessage').html(response.message);
+								$('#flashMessage').show();
+								if (response.status == 200) {
+									updateSQLTable(response.response);
+								}
+							},
+							error : function() {
+								alert("無法連線到SERVER！");
+							}
+						});
+
+					}
+
+					function updateSQLTable(data) {
+						$("#sql_log > tbody").empty();
+						var time = (data.time / 1000000).toFixed(2);
+						var table_html = "";
+
+						table_html += '<tr>';
+						table_html += '<td>' + '1' + '</td>';
+						table_html += '<td>' + data.sql + '</td>';
+						table_html += '<td style="text-align: right">' + '0'
+								+ '</td>';
+						table_html += '<td style="text-align: right">'
+								+ data.row + '</td>';
+						table_html += '<td style="text-align: right">'
+								+ data.row + '</td>';
+						table_html += '<td style="text-align: right">' + time
+								+ '</td>';
+						table_html += '</tr>';
+						$("#sql_log > tbody").append(table_html);
+						$("#sql_summary").html(
+								"(default) " + data.row + " queries took "
+										+ time + " ms");
+					}
+				});
+	</script>
+
+
+  
+
+</body>
+
+</html>

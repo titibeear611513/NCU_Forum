@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: skyblue;
+}
+
+header{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #212121;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 200;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+header .header_wrap{
+    width: 200%;
+}
+
+header .header_inner {
+    height: 60px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.left_side{
+    width: 20%;
+    height: 100%;
+    margin-left: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.left_side i{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.left_side #btn{
+    position: absolute;
+    color: #fff;
+    left: 30px;
+    font-size:30px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+    padding: 0 10px;
+}
+
+header .header_inner .left_side .slide_menu{
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+}
+
+header .header_inner .left_side .slide_menu i {
+    font-size: 18px;
+    width: 23px;
+    height: 23px;
+}
+
+header .header_inner .left_side #logo {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    font-size: 28px;
+    letter-spacing: .9px;
+}
+  
+header .header_inner .left_side #logo img {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+header .header_inner .left_side .logoname{
+    width: 100%;
+    margin-left: 1px;
+    font-size: 28px;
+    color: #fff ;
+}
+.mid_side{
+    width: 60%;
+    height: 100%;
+    margin-left: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header_inner .right_side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: auto;
+}
+
+header .header_inner .right_side .header_widgets .btn {
+    margin-left: 1em;
+}
+
+.right_side{
+    width: 35%;
+    height: 100%;
+    margin-right: 15em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_content{
+    margin-top: 60px;
+    height: 100%;
+    width: 100%;
+    background-color: #E5E7E9;
+}
+
+.ncu_carousel{
+    margin-top: 60px;
+}
+
+.ncu_item{
+    height: ;
+}
+
+

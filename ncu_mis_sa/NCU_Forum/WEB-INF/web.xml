@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<web-app>
+    <servlet>
+        <servlet-name>member</servlet-name>
+        <servlet-class>ncu.im3069.demo.controller.MemberController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>member</servlet-name>
+        <url-pattern>/api/member.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>ncu.im3069.demo.controller.LogoutController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/api/logout.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Mmember</servlet-name>
+        <servlet-class>ncu.im3069.demo.controller.MmemberController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Mmember</servlet-name>
+        <url-pattern>/api/Mmember.do</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="utf-8">
+        <title>貼文瀏覽 ｜ NCU論壇</title>
+    	<link href="statics/icon/ncu.ico" type="image/x-icon" rel="icon">
+    	<link href="statics/icon/ncu.ico" type="image/x-icon" rel="shortcut icon">
+        <link rel="stylesheet" href="statics/css/testbrowse.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+        <script src="statics/js/jquery-3.4.1.min.js"></script>
+    </head>
+<body >
+    <header>
+    
+        <div class="header_wrap" >
+            <div class="header_inner mcontainer">
+                <div class="left_side">
+                    
+                    <div class="slide_menu">
+                        <i class="bx bx-menu" id="btn"></i>
+                    </div>
+                    <div id="logo">
+                        <a href="Test_home.html"> 
+                            <img src="statics/img/NCU_LOGO.png" >
+                        </a>
+                    </div>
+                    <div class="logoname">
+                        <span class="logoname">中大論壇</span>
+                    </div>
+                </div>
+                <div class="mid_side">
+                    <div class="header-search-icon" uk-toggle="target: #wrapper ; cls: show-searchbox"> </div>
+                    <div class="header_search"><i class="bx bx-search"></i> 
+                        <input value="" type="text" class="form-control" placeholder="搜尋貼文關鍵字" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="right_side">
+                    <div class="header_widgets">
+                        <nav class="my-2 my-md-0 mr-md-3">
+                            <a class="p-2 text-light" href="Test_Post.html">新增貼文</a>
+                        </nav>
+                        <a class="btn btn-outline-info" href="personal_inform.html">個人資訊</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>  
+    
+    <div class="sidebar" id ="sidebar">
+        <ul class="nav_list">
+            <li>
+                <a href="Test_home.html">
+                    <i class='bx bxs-bell'></i>
+                    <span class="links_name">主頁</span>
+                </a>
+                <span class="tooltip">主頁</span>
+            </li>
+            <li>
+                <a href="campus.html">
+                    <i class='bx bxs-landmark' ></i>
+                    <span class="links_name">校園版</span>
+                </a>
+                <span class="tooltip">校園版</span>
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class='bx bxs-chat' ></i>
+                    <span class="links_name">閒聊版</span>
+                </a>
+                <span class="tooltip">閒聊版</span>
+            </li>
+            <li>
+                <a href="beauty.html">
+                    <i class='bx bx-female'></i>
+                    <span class="links_name">表特版</span>
+                </a>
+                <span class="tooltip">表特版</span>
+            </li>
+            <li>
+                <a href="rent.html">
+                    <i class='bx bxs-home' ></i>
+                    <span class="links_name">租屋版</span>
+                </a>
+                <span class="tooltip">租屋版</span>
+            </li>
+            <li>
+                <a href="Test_lost.html">
+                    <i class='bx bxs-shopping-bag'></i>
+                    <span class="links_name">遺失物版</span>
+                </a>
+                <span class="tooltip">遺失物版</span>
+            </li>
+            <li>
+                <a href="transaction.html">
+                    <i class='bx bx-money-withdraw' ></i>
+                    <span class="links_name">交易版</span>
+                </a>
+                <span class="tooltip">交易版</span>
+            </li>
+            <li>
+                <a href="game.html">
+                    <i class='bx bxs-game' ></i>
+                    <span class="links_name">遊戲版</span>
+                </a>
+                <span class="tooltip">遊戲版</span>
+            </li>
+            <li>
+                <a href="activity.html">
+                    <i class='bx bx-accessibility'></i>
+                    <span class="links_name">活動版</span>
+                </a>
+                <span class="tooltip">活動版</span>
+            </li>
+            <li>
+                <a href="Test_hate.html">
+                    <i class='bx bxs-comment-x'></i>
+                    <span class="links_name">靠北版</span>
+                </a>
+                <span class="tooltip">靠北版</span>
+            </li>
+            <li>
+                <a href="food.html">
+                    <i class='bx bxs-bowl-hot' ></i>
+                    <span class="links_name">美食版</span>
+                </a>
+                <span class="tooltip">美食版</span>
+            </li>
+            <li>
+                <a href="course.html">
+                    <i class='bx bxs-book-alt' ></i>
+                    <span class="links_name">課程版</span>
+                </a>
+                <span class="tooltip">課程版</span>
+            </li>
+            <li>
+                <a class="linkButtons" href="logout" id="logout">
+                    <i class='bx bxs-cog' ></i>
+                    <span class="links_name">登出</span>
+                </a>
+                <span class="tooltip">登出</span>
+            </li>
+        </ul>
+    </div>
+    <div class="home_content" >
+        <div class="container py-4 " style="margin-top: 65px; border-style: none; width: 65%;">
+            <div class="pricing-header px-3 py-2 pb-md-4 mx-auto text-center"  >
+                <h1 class="display-4">美食版</h1>
+                <p class="lead">美食沙漠中央大學的一點綠洲...</p>
+            </div>
+            
+            <div class="album py-5 bg-light" >
+                <div class="container_post" >
+                    <div id="product_panel" class="row" >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        searchbtn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+
+    </script>
+    <script>   
+        var [client_cart_obj, client_cart_amount]  = getCartDataFromClient();
+        
+        function getAllProduct() {
+          $.ajax({
+            type: "GET",
+            url: "api/post.do",
+            crossDomain: true,
+            cache: false,
+            dataType: 'json',
+            timeout: 5000,
+            success: function (response) {
+              if (response.status == 200) {
+                var product_panel = '';
+                
+                $.each(response.response.data, function (){
+                	if(addProduct(this)!='gg')
+                    product_panel += addProduct(this);
+                })
+                
+                $("#product_panel").append(product_panel);
+                setButtonFunction();
+                checkIfExistInCart();
+              }
+            },
+            error: function () {
+              alert("無法連線到伺服器！");
+            }
+          });
+        }
+    
+        getAllProduct();
+        
+        function addProduct(data) {
+        	if(data.group!="美食版"){let inner_html = 'gg'; return inner_html;}
+            let inner_html = '';
+            inner_html += '<div class="col-md-4">';
+            inner_html += '<div class="card-header">';
+            inner_html += '<h4 class="font-weight-normal text-center text-truncate">' + data.group + '</h4>';//標題
+             inner_html += '</div>';
+             inner_html += '<div class="card mb-4 shadow-sm">';
+             //inner_html += '<img src="statics/img/product/' + data.image + '" width="100%">';//ICON
+            inner_html += '<div class="card-body">';
+            inner_html += '<h1 class="card-title pricing-card-title text-center">' + data.title + ' <small class="text-muted"></small></h1>';
+            inner_html += '<p class="card-text text-center">' + data.info + '</p>';//概要內容
+            inner_html += '<div class="d-flex justify-content-between align-items-center">';
+            inner_html += '<div class="btn-group">';
+            //inner_html += '<button id="add_cart_' + data.id + '" name="add_cart" type="button" class="btn btn-lg btn-block btn-outline-primary">查看貼文</button>';
+            inner_html += '</div><small class="text-muted"> ' + '發布時間:2023/1/6</small>';//data.id
+            inner_html += '</div></div></div></div>';
+            
+            return inner_html;
+        }
+        
+        function setButtonFunction() {
+            $('button[name="add_cart"]').click(function () {
+                var action = (this.id).split('_')[0];
+                var destination = (this.id).split('_')[1];
+                var id = (this.id).split('_')[2];
+                addProductToCart(id, 1);
+            });
+        }
+        
+        function getCartDataFromClient() {
+            let cart = JSON.parse(localStorage.getItem("client_cart_obj"));
+            let amount = JSON.parse(localStorage.getItem("client_cart_amount"));
+            cart = !cart ? new Array() : cart;
+            amount = !amount ? new Array() : amount;
+            return [cart, amount];
+        }
+        
+        
+        function updateCartDataToClent() {
+            localStorage.setItem("client_cart_obj", JSON.stringify(client_cart_obj));
+            localStorage.setItem("client_cart_amount", JSON.stringify(client_cart_amount));
+        }
+        
+    
+        
+        function setButtonState(id, action) {
+            if (!action) {
+                $('#' + id).prop('disabled', true);
+                $('#' + id).addClass('disabled');
+                $('#' + id).html('已加入');
+            }
+            else {
+                $('#' + id).prop('disabled', false);
+                $('#' + id).removeClass('disabled');
+                $('#' + id).html('查看貼文');
+            }
+        }
+      </script>
+
+</body>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+	<head>
+        <meta charset="utf-8">
+        <title>貼文瀏覽 ｜ NCU論壇</title>
+    	<link href="statics/icon/ncu.ico" type="image/x-icon" rel="icon">
+    	<link href="statics/icon/ncu.ico" type="image/x-icon" rel="shortcut icon">
+        <link rel="stylesheet" href="statics/css/testbrowse.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+        <script src="statics/js/jquery-3.4.1.min.js"></script>
+    </head>
+<body>
+    <header>
+    
+        <div class="header_wrap" >
+            <div class="header_inner mcontainer">
+                <div class="left_side">
+                    
+                    <div class="slide_menu">
+                        <i class="bx bx-menu" id="btn"></i>
+                    </div>
+                    <div id="logo">
+                        <a href="Test_home.html"> 
+                            <img src="statics/img/NCU_LOGO.png" >
+                        </a>
+                    </div>
+                    <div class="logoname">
+                        <span class="logoname">中大論壇</span>
+                    </div>
+                </div>
+                <div class="mid_side">
+                    <div class="header-search-icon" uk-toggle="target: #wrapper ; cls: show-searchbox"> </div>
+                    <div class="header_search"><i class="bx bx-search"></i> 
+                        <input value="" type="text" class="form-control" placeholder="搜尋貼文關鍵字" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="right_side">
+                    <div class="header_widgets">
+                        <nav class="my-2 my-md-0 mr-md-3">
+                            <a class="p-2 text-light" href="Test_Post.html">新增貼文</a>
+                        </nav>
+                        <a class="btn btn-outline-info" href="personal_inform.html">個人資訊</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>  
+    
+    <div class="sidebar" id ="sidebar">
+        <ul class="nav_list">
+            <li>
+                <a href="Test_home.html">
+                    <i class='bx bxs-bell'></i>
+                    <span class="links_name">主頁</span>
+                </a>
+                <span class="tooltip">主頁</span>
+            </li>
+            <li>
+                <a href="campus.html">
+                    <i class='bx bxs-landmark' ></i>
+                    <span class="links_name">校園版</span>
+                </a>
+                <span class="tooltip">校園版</span>
+            </li>
+            <li>
+                <a href="chat.html">
+                    <i class='bx bxs-chat' ></i>
+                    <span class="links_name">閒聊版</span>
+                </a>
+                <span class="tooltip">閒聊版</span>
+            </li>
+            <li>
+                <a href="beauty.html">
+                    <i class='bx bx-female'></i>
+                    <span class="links_name">表特版</span>
+                </a>
+                <span class="tooltip">表特版</span>
+            </li>
+            <li>
+                <a href="rent.html">
+                    <i class='bx bxs-home' ></i>
+                    <span class="links_name">租屋版</span>
+                </a>
+                <span class="tooltip">租屋版</span>
+            </li>
+            <li>
+                <a href="Test_lost.html">
+                    <i class='bx bxs-shopping-bag'></i>
+                    <span class="links_name">遺失物版</span>
+                </a>
+                <span class="tooltip">遺失物版</span>
+            </li>
+            <li>
+                <a href="transaction.html">
+                    <i class='bx bx-money-withdraw' ></i>
+                    <span class="links_name">交易版</span>
+                </a>
+                <span class="tooltip">交易版</span>
+            </li>
+            <li>
+                <a href="game.html">
+                    <i class='bx bxs-game' ></i>
+                    <span class="links_name">遊戲版</span>
+                </a>
+                <span class="tooltip">遊戲版</span>
+            </li>
+            <li>
+                <a href="activity.html">
+                    <i class='bx bx-accessibility'></i>
+                    <span class="links_name">活動版</span>
+                </a>
+                <span class="tooltip">活動版</span>
+            </li>
+            <li>
+                <a href="Test_hate.html">
+                    <i class='bx bxs-comment-x'></i>
+                    <span class="links_name">靠北版</span>
+                </a>
+                <span class="tooltip">靠北版</span>
+            </li>
+            <li>
+                <a href="food.html">
+                    <i class='bx bxs-bowl-hot' ></i>
+                    <span class="links_name">美食版</span>
+                </a>
+                <span class="tooltip">美食版</span>
+            </li>
+            <li>
+                <a href="course.html">
+                    <i class='bx bxs-book-alt' ></i>
+                    <span class="links_name">課程版</span>
+                </a>
+                <span class="tooltip">課程版</span>
+            </li>
+            <li>
+                <a class="linkButtons" href="logout" id="logout">
+                    <i class='bx bxs-cog' ></i>
+                    <span class="links_name">登出</span>
+                </a>
+                <span class="tooltip">登出</span>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="home_content">
+    	<div class="container" style="width: 60%; padding: 1em 2em;">
+    		<form id="form" accept-charset="utf-8">
+        		<div style="display:none;"><input type="hidden" name="_method" value="POST"></div>
+        		<div class="input text required">
+            		<label for="member_name">姓名</label>
+            		<input name="name" maxlength="30" type="text" id="member_name" required="required">
+        		</div>
+        		<div class="input email required">
+		            <label for="member_email">電郵</label>
+		            <input name="email" maxlength="50" type="email" id="member_email" required="required" disabled>
+		        </div>
+		        <div class="input password required">
+		            <label for="member_password">密碼</label>
+		            <input name="password" type="password" id="member_password" required="required">
+        		</div>
+        		<div class="submit"><input type="button" value="更新" id="submit"></div>
+    		</form>
+    	</div>
+    </div>
+    
+    <script type="text/javascript">
+                // 取得網址參數
+                var url_string = window.location.href;
+                var url = new URL(url_string);
+                var id = url.searchParams.get("id");
+                var sql_num = 0;
+
+                function updateMember(id) {
+                    var name = $('#member_name').val();
+                    var email = $('#member_email').val();
+                    var password = $('#member_password').val();
+
+                    var password_rule = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+                    if(!password_rule.test(password)) {
+                        alert("密碼格式不符，長度至少8，且至少包含一個數字和英文字母！");
+                    }
+                    else {
+                        // 將資料組成JSON格式
+                        var data_object = {
+                            "id": id,
+                            "name": name,
+                            "email": email,
+                            "password": password
+                        };
+
+                        // 將JSON格式轉換成字串
+                        var data_string = JSON.stringify(data_object);
+
+                        // 發出POST的PUT請求
+                        $.ajax({
+                                type: "PUT",
+                                url: "api/member.do",
+                                data: data_string,
+                                crossDomain: true,
+                                cache: false,
+                                dataType: 'json',
+                                timeout: 5000,
+                                success: function (response) {
+                                    $('#flashMessage').html(response.message);
+                                    $('#flashMessage').show();
+                                    if(response.status == 200){
+                                        updateSQLTable(response.response);
+                                    	alert("成功更新個人資訊!");
+                                        getMember();
+                                    }
+                                },
+                                error: function () {
+                                    alert("無法連線到伺服器！");
+                                }
+                        });
+                    }
+                }
+
+                // 更新SQL指令歷史表格
+                function updateSQLTable(data) {
+                    var time = (data.time / 1000000).toFixed(2);
+                    var table_html = "";
+                    
+                    sql_num += 1
+
+                    table_html += '<tr>';
+                    table_html += '<td>' + sql_num + '</td>';
+                    table_html += '<td>' + data.sql + '</td>';
+                    table_html += '<td style="text-align: right">' + '0' + '</td>';
+                    table_html += '<td style="text-align: right">' + data.row + '</td>';
+                    table_html += '<td style="text-align: right">' + data.row + '</td>';
+                    table_html += '<td style="text-align: right">' + time + '</td>';
+                    table_html += '</tr>';
+                    $("#sql_log > tbody").append(table_html);
+                    $("#sql_summary").html("(default) " + data.row + " queries took " + time + " ms");
+                }
+
+                function getMember() {
+                    $.ajax({
+                        type: "GET",
+                        url: "api/member.do",
+                        crossDomain: true,
+                        data: "id=" + id,
+                        cache: false,
+                        dataType: 'json',
+                        timeout: 5000,
+                        success: function (response) {
+                            if(response.status == 200){
+                            	updateSQLTable(response.response);
+                            	document.getElementById('member_name').value = response['response']['data'][0]['name'];
+                            	document.getElementById('member_email').value = response['response']['data'][0]['email'];
+                            	document.getElementById('member_password').value = response['response']['data'][0]['password'];
+                            }
+                            console.log(response);
+                        },
+                        error: function () {
+                            alert("無法連線到伺服器！");
+                        }
+                    });
+                }
+
+                $('#submit').click(function() {
+                    updateMember(id)
+                });
+                
+                $(document).ready(function() {
+                	// 發出GET的AJAX請求取得原本該會員的資料
+                 	$("#sql_log > tbody").empty();
+                    getMember();
+                });
+        
+        
+    	
+    </script>
+    
+</body>    
